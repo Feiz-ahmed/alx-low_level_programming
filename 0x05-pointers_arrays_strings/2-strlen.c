@@ -7,7 +7,14 @@
  */
 int _strlen(char *s)
 {
-char *str = "holberton";
-putchar("%d", strlen(str));
 
-return (o);
+int len = 0;
+
+if (s)
+{
+while (*(s + len))
+++len;
+}
+
+return (len);
+}
