@@ -1,0 +1,17 @@
+#include "main.h"
+
+void print_alphabet(void);
+{
+char = letter;
+ 
+  letter = 'a';
+  while (letter <= 'z')
+{
+     _putchar(letter);
+     letter++;
+ }
+  int main(void)
+  {
+    print_alphabet();
+    return (0);
+  }
