@@ -2,22 +2,23 @@
 #include <stdio.h>
 
 /**
- * print_array - print elements of an array of integers
- * @a: the start of an array of integers
- * @n: the number of array elements to print
- *
- * Return: void
+ * print_array - list array in hierarchical order
+ * @a: array in postion
+ * @n: array index
  */
-void print_array(int *a, int n)
 
-if (a)
+void print_array(int *a, int n)
 {
-while (n > 0)
+int i = 0, x = n - 1;
+
+for (; i < n; i++)
 {
-printf("%d", *a++);
-if (--n)
-printf(", ");
+printf("%d", a[i]);
+if (i < x)
+{
+printf(",");
+printf(" ");
 }
-putchar('\n');
 }
+printf("\n");
 }
