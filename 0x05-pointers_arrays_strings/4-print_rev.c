@@ -5,14 +5,14 @@
  */
 void print_rev(char *s)
 {
-int l = 0;
-while (*(s + l) != '\0')
-l++;
-while (l >= 0)
-{
-_putchar(s[l]);
-l--;
-}
-_putchar('\n');
+char *t = s;
 
+if (s)
+{
+while (*t)
+++t;
+while (s < t--)
+_putchar(*t);
+_putchar('\n');
+}
 }
