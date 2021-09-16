@@ -8,22 +8,22 @@
  */
 int is_palindrome(char *s)
 {
-int i = 0;
-int c = 0;
-int n = 0;
+  int i = 0;
+  int c = 0;
+  int n = 0;
 
-if (i < n / 2)
-{
-if (s[i] == s[n - i - 1])
-c++;
-i++;
-return (*s);
-}
-else
-{
-if (c == i)
-return (1);
-else
-return (0);
-}
+  if (i < n / 2)
+    {
+      if (s[i] == s[n - i - 1])
+	c++;
+      i++;
+      return (*s);
+    }
+  else
+    {
+      if (c == i)
+	return (1);
+      else
+	return (0);
+    }
 }
