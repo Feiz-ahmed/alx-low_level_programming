@@ -13,7 +13,7 @@ unsigned int i = 0;
 char *p = 0;
 if (size <= 0)
 return (NULL);
-p = malloc(sizeof(int) * size));
+p = malloc(sizeof(int) * size);
 if (p != NULL)
 for (i = 0; i < size; i++)
 *(p + i) = c;
