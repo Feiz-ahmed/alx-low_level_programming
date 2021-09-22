@@ -13,14 +13,13 @@ char *new_string;
 int str_len = 0;
 while (str[str_len] != 0)
 str_len++;
-new_string = malloc(sizeof(char) * str_len + 1);
+new_string = malloc(sizeof(char) * str_len);
 if (new_string == NULL)
 return (NULL);
-while (str)
+while (str[i] != 0)
 {
-new_string[i] = *str;
+new_string[i] = str[i];
 i++;
-str++;
 }
 return (new_string);
 }
